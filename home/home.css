@@ -1,0 +1,146 @@
+/* BACKGROUND */
+
+body {
+  /* background-image: url("../global/img/Loadingscreen.jpg");
+  background-size: cover; */
+}
+
+@media (min-width: 500px) {
+  body {
+    /* background-image: url("../global/img/Loadingscreen.jpg"); */
+  }
+}
+
+/* BACKGROUND */
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.home-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10%;
+}
+
+.content-container {
+  background-image: url("../global/img/Loadingscreen.jpg");
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.5);
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  overflow: hidden;
+  position: relative;
+}
+
+.active {
+  transition: 0.125s ease-in-out;
+}
+
+.circle {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.125s ease-in-out;
+  z-index: 1;
+}
+
+#circle-left {
+  width: 100%;
+  height: 150%;
+  left: -12em;
+}
+
+#circle-right {
+  width: 100%;
+  height: 150%;
+  right: -12em;
+}
+
+#circle-top {
+  height: 30%;
+  top: -12em;
+  right: 0;
+  left: 0;
+}
+
+#circle-bottom {
+  height: 30%;
+  bottom: -12em;
+  right: 0;
+  left: 0;
+}
+
+.left-container {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container p {
+  transform: rotate(90deg);
+}
+
+.mid-container {
+  width: 70%;
+  height: 100%;
+}
+
+.top-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right-container {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-container p {
+  transform: rotate(-90deg);
+}
+
+.home-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    padding: 2.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-container {
+    padding: 4%;
+  }
+}

@@ -1,0 +1,27 @@
+/* BACKGROUND */
+
+body {
+  background-image: url();
+  background-size: cover;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url();
+  }
+}
+
+/* BACKGROUND */
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.work-container {
+  height: calc(100vh - 18vh);
+}
+
+#github {
+  width: 5em;
+  height: 5em;
+}

@@ -1,0 +1,30 @@
+* {
+  text-decoration: none;
+  cursor: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  width: 100%;
+  height: calc(- 8vh);
+}
+
+#home {
+  height: calc(100vh - 8vh);
+}
+
+footer {
+  font-weight: 300;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}

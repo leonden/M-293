@@ -1,0 +1,57 @@
+body {
+  background-image: url(../../global/img/background/contact-mobile-bg.jpg);
+  background-size: cover;
+  color: black;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(../../global/img/background/contact-desktop-bg.jpg);
+  }
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-container {
+  height: calc(100vh - 18vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-container h1 {
+  text-align: center;
+  animation-name: title-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.contact-tile {
+  width: 50%;
+  height: 50%;
+}
+
+@keyframes title-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
