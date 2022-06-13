@@ -24,6 +24,8 @@ function hoverOverLink() {
   const links = document.querySelectorAll("a");
   // all accordion labels
   const labels = document.querySelectorAll(".label");
+  // all home nav links
+  const homeNav = document.querySelectorAll(".home-nav");
 
   // links
   for (let i = 0; i < links.length; i++) {
@@ -47,6 +49,19 @@ function hoverOverLink() {
 
     // hover finish
     labels[i].addEventListener("mouseout", function (event) {
+      cursor.classList.remove("cursor-active");
+    });
+  }
+
+  // home nav
+  for (let i = 0; i < homeNav.length; i++) {
+    // hover start
+    homeNav[i].addEventListener("mouseover", function (event) {
+      cursor.classList.add("cursor-active");
+    });
+
+    // hover finish
+    homeNav[i].addEventListener("mouseout", function (event) {
       cursor.classList.remove("cursor-active");
     });
   }
