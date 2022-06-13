@@ -1,14 +1,17 @@
+/* BACKGROUND */
+
 body {
-  background-image: url(../../global/img/background/about-mobile-bg.jpg);
-  background-size: cover;
-  color: black;
+  /* background-image: url("../global/img/Loadingscreen.jpg");
+  background-size: cover; */
 }
 
 @media (min-width: 500px) {
   body {
-    background-image: url(../../global/img/background/about-desktop-bg.jpg);
+    /* background-image: url("../global/img/Loadingscreen.jpg"); */
   }
 }
+
+/* BACKGROUND */
 
 html {
   font-family: "Poppins", sans-serif;
@@ -96,6 +99,7 @@ html {
 
 .content {
   font-size: 0.95em;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* MEDIA QUERIES */

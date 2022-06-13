@@ -44,65 +44,6 @@ a {
   position: relative;
 }
 
-.content-container div p {
-  /* mix-blend-mode: difference; */
-  color: white;
-}
-
-.active {
-  transition: 0.125s ease-in-out;
-}
-
-.left-container {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-container p {
-  transform: rotate(90deg);
-}
-
-.mid-container {
-  width: 70%;
-  height: 100%;
-}
-
-.top-container {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.bottom-container {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.right-container {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.right-container p {
-  transform: rotate(-90deg);
-}
-
-.home-text {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .home-container {
     padding: 10%;
