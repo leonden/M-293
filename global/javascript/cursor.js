@@ -1,4 +1,4 @@
-// CURSOR
+// CURSOR START
 
 function cursorMove() {
   var cursor = document.querySelector(".cursor");
@@ -69,3 +69,5 @@ function hoverOverLink() {
 
 detectDevice();
 hoverOverLink();
+
+// CURSOR FINISH
