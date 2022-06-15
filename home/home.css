@@ -36,12 +36,35 @@ a {
   padding: 10%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   color: white;
   font-size: 2em;
   overflow: hidden;
-  position: relative;
+}
+
+.letter-icon {
+  width: 50%;
+  height: fit-content;
+  padding: 5%;
+}
+
+.letter-icon img {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
+
+#l {
+  transform: scale(-1, 1);
+}
+
+@media (min-width: 576px) {
+  .letter-icon img {
+    max-height: 30%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -53,6 +76,10 @@ a {
     padding: 5%;
   }
 
+  .letter-icon {
+    max-height: 50%;
+  }
+
   .content-container div p {
     font-size: 2em;
   }
@@ -61,5 +88,9 @@ a {
 @media (min-width: 992px) {
   .home-container {
     padding: 4%;
+  }
+
+  .content-container {
+    flex-wrap: nowrap;
   }
 }
