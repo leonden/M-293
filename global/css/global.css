@@ -12,6 +12,7 @@ body {
 .page {
   width: 100%;
   height: calc(- 8vh);
+  background: white;
 }
 
 #home {

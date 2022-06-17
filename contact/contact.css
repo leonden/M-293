@@ -32,7 +32,7 @@ body {
   animation-name: title-fade-in;
   animation-duration: 2s;
   animation-iteration-count: initial;
-  margin: 0.5em 0;
+  font-size: 3em;
 }
 
 @keyframes title-fade-in {
@@ -49,6 +49,8 @@ form {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
   padding: 10%;
 }
 
@@ -56,12 +58,12 @@ form input,
 form textarea {
   border: 0;
   padding: 1em;
-  margin: 0.5em 0;
   outline: none;
   background-color: rgb(230, 230, 230);
   font-size: 1em;
   border-radius: 30px;
   font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 10px 12px -12px rgb(0 0 0 / 45%);
 }
 
 form input::placeholder {
@@ -80,8 +82,12 @@ form textarea {
   border-radius: 20px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 form button {
-  margin: auto;
   width: 7em;
   padding: 0.7em;
   background: black;
@@ -90,4 +96,28 @@ form button {
   border: 0;
   outline: none;
   border-radius: 30px;
+  transition: 0.25s;
+}
+
+form button:hover {
+  background: gray;
+  transition: 0.25s;
+}
+
+@media (max-width: 768px) {
+  .content-container h1 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  form {
+    padding: 10% 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  form {
+    padding: 5% 30%;
+  }
 }
