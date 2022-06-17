@@ -5,10 +5,10 @@ function sendEmail() {
   const userMsg = document.querySelector("#message").value;
 
   Email.send({
-    SecureToken: "cf713e50-584b-4cd3-b038-ab95b3a902b7",
+    SecureToken: "bd49c411-cb2b-42a9-bbc8-59f8e05a8b88",
     To: "contact@leonhochwimmer.com",
     From: userEmail,
-    Subject: "New Contact Form Enquiry",
+    Subject: "Neue Kontaktanfrage von " + userName,
     Body:
       "Name: " +
       userName +
