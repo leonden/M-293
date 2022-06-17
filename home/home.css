@@ -74,14 +74,7 @@ a {
 
   .content-container {
     padding: 5%;
-  }
-
-  .letter-icon {
-    max-height: 50%;
-  }
-
-  .content-container div p {
-    font-size: 2em;
+    flex-wrap: nowrap;
   }
 }
 
