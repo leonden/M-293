@@ -13,12 +13,17 @@ body {
   min-height: 100vh;
 }
 
+header {
+  position: relative;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   background: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -33,7 +38,7 @@ nav {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 40%;
   backdrop-filter: blur(10px);
   z-index: 99;
@@ -64,12 +69,6 @@ nav {
   background: black;
   margin: 7px;
   transition: all 500ms ease;
-}
-
-@media (max-width: 768px) {
-  nav {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  }
 }
 
 @media (min-width: 768px) {
