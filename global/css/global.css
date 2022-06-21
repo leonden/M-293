@@ -12,6 +12,7 @@ body {
 .page {
   width: 100%;
   height: calc(- 8vh);
+  background-color: white;
 }
 
 #home {
@@ -26,5 +27,5 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
 }

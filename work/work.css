@@ -17,11 +17,66 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 1.6em;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.25em;
+  margin: 0.5em 0;
+}
+
 .work-container {
   height: calc(100vh - 18vh);
 }
 
-#github {
-  width: 5em;
-  height: 5em;
+.content-container {
+  height: 100%;
+  padding: 7.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work-img {
+  width: 40%;
+  transition: 0.5s;
+  margin: 2.5%;
+}
+
+.work-img:hover {
+  transition: 0.25s;
+  opacity: 0;
+}
+
+.icon-container {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-height: 576px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .work-img {
+    width: 10em;
+  }
+
+  .content-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 992px) {
+  .work-img {
+    width: 12.5em;
+  }
 }
