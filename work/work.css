@@ -28,6 +28,10 @@ p {
   margin: 0.5em 0;
 }
 
+img {
+  display: block;
+}
+
 .work-container {
   height: calc(100vh - 18vh);
 }
@@ -40,10 +44,14 @@ p {
   justify-content: space-between;
 }
 
-.work-img {
+.tile {
   width: 40%;
-  transition: 0.5s;
   margin: 2.5%;
+}
+
+.work-img {
+  width: 100%;
+  transition: 0.5s;
 }
 
 .work-img:hover {
@@ -54,7 +62,6 @@ p {
 .icon-container {
   padding: 5%;
   display: flex;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -66,8 +73,9 @@ p {
 }
 
 @media (min-width: 768px) {
-  .work-img {
+  .tile {
     width: 10em;
+    margin: 1%;
   }
 
   .content-container {
@@ -76,7 +84,7 @@ p {
 }
 
 @media (min-width: 992px) {
-  .work-img {
+  .tile {
     width: 12.5em;
   }
 }
