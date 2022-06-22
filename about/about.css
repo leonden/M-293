@@ -40,7 +40,7 @@ html {
 
 .content-box {
   border-bottom: 2px solid black;
-  box-shadow: 0 4px 4px -4px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 11px -12px rgb(0 0 0 / 75%);
 }
 
 .label {
