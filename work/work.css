@@ -44,20 +44,18 @@ img {
   justify-content: space-between;
 }
 
-.centre-container {
-  margin: auto;
-}
-
 .icon-container {
   width: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tile {
-  width: 40%;
+  width: 30%;
   margin: 2.5%;
+  position: relative;
 }
 
 .work-img {
@@ -69,6 +67,7 @@ img {
   transition: 0.25s;
   opacity: 0;
 }
+
 @media (max-height: 576px) {
   p {
     font-size: 1em;
@@ -88,6 +87,6 @@ img {
 
 @media (min-width: 992px) {
   .tile {
-    width: 12.5em;
+    width: 11em;
   }
 }
