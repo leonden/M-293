@@ -68,20 +68,10 @@ img {
   opacity: 0;
 }
 
-@media (max-height: 576px) {
-  p {
-    font-size: 1em;
-  }
-}
-
 @media (min-width: 768px) {
   .tile {
     width: 10em;
     margin: 1%;
-  }
-
-  .content-container {
-    justify-content: space-evenly;
   }
 }
 
