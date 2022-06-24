@@ -26,6 +26,8 @@ function hoverOverLink() {
   const labels = document.querySelectorAll(".label");
   // all home nav tiles
   const homeNav = document.querySelectorAll(".home-nav");
+  // all work tiles
+  const workTiles = document.querySelectorAll(".tile");
 
   // links
   for (let i = 0; i < links.length; i++) {
@@ -62,6 +64,19 @@ function hoverOverLink() {
 
     // hover finish
     homeNav[i].addEventListener("mouseout", function (event) {
+      cursor.classList.remove("cursor-active");
+    });
+  }
+
+  // work tiles
+  for (let i = 0; i < workTiles.length; i++) {
+    // hover start
+    workTiles[i].addEventListener("mouseover", function (event) {
+      cursor.classList.add("cursor-active");
+    });
+
+    // hover finish
+    workTiles[i].addEventListener("mouseout", function (event) {
       cursor.classList.remove("cursor-active");
     });
   }
