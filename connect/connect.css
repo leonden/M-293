@@ -1,0 +1,130 @@
+html {
+  font-family: "Poppins", sans serif;
+}
+
+#connect {
+  /* height: calc(100% - 8vh); */
+}
+
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-tile {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  animation-name: tile-fade-in;
+  animation-duration: 0.75s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+  transform: translateX(-110%);
+}
+
+#github {
+  animation-delay: 0.25s;
+}
+
+#linkedin {
+  animation-delay: 0.5s;
+}
+
+#instagram {
+  animation-delay: 0.75s;
+}
+
+@keyframes tile-fade-in {
+  100% {
+    transform: translateX(0);
+    transition: ease-out;
+  }
+}
+
+.contact-tile img {
+  width: 4em;
+  transition: 0.25s;
+}
+
+.tile-text {
+  overflow: hidden;
+}
+
+.contact-tile p {
+  font-size: 1.25em;
+  margin-left: 1em;
+}
+
+.contact-tile a {
+  color: black;
+}
+
+.content-container {
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container h1 {
+  margin: 1em;
+  text-align: center;
+  animation-name: title-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.media-container {
+  width: 100%;
+  height: fit-content;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.media-container iframe {
+  width: 100%;
+  height: 30vh;
+  border: 0;
+  max-width: 600px;
+}
+
+@keyframes title-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 786px) {
+  .contact-container {
+    align-items: center;
+  }
+
+  .content-container {
+    overflow: hidden;
+  }
+
+  .contact-tile img:hover {
+    filter: invert(0.7);
+    transition: 0.25s;
+  }
+
+  .tile-text {
+    font-size: 1.5em;
+  }
+
+  .media-container {
+    padding: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .media-container iframe {
+    max-width: 800px;
+  }
+}
