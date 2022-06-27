@@ -1,8 +1,9 @@
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links li");
+const body = document.querySelector("body");
 
+const navSlide = () => {
   burger.addEventListener("click", () => {
     //Toggle Nav
     nav.classList.toggle("nav-active");
@@ -19,6 +20,8 @@ const navSlide = () => {
     });
     //Burger Animation
     burger.classList.toggle("toggle");
+    body.style.overflowY = "hidden";
+    //todo rest of the connect page nav overflow logic!
   });
 };
 
