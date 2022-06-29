@@ -63,11 +63,6 @@ img {
   transition: 0.5s;
 }
 
-/* .work-img:hover {
-  transition: 0.25s;
-  opacity: 0;
-} */
-
 @media (min-width: 768px) {
   .tile {
     width: 10em;

@@ -20,8 +20,12 @@ const navSlide = () => {
     });
     //Burger Animation
     burger.classList.toggle("toggle");
-    body.style.overflowY = "hidden";
-    //todo rest of the connect page nav overflow logic!
+
+    if (burger.classList.contains("toggle")) {
+      body.style.overflowY = "hidden";
+    } else {
+      body.style.overflowY = "unset";
+    }
   });
 };
 
