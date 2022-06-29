@@ -21,6 +21,7 @@ const navSlide = () => {
     //Burger Animation
     burger.classList.toggle("toggle");
 
+    // disables scroll in nav mobile if page is longer than 100vh
     if (burger.classList.contains("toggle")) {
       body.style.overflowY = "hidden";
     } else {
