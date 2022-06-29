@@ -17,11 +17,11 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
+.content-container h1 {
   font-size: 1.6em;
 }
 
-p {
+.content-container p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25em;
   line-height: 1.25em;
@@ -69,12 +69,12 @@ img {
     margin: 1%;
   }
 
-  h1 {
-    font-size: 3em;
+  .content-container h1 {
+    font-size: 2.5em;
   }
 
-  p {
-    font-size: 2em;
+  .content-container p {
+    font-size: 1.5em;
   }
 }
 
