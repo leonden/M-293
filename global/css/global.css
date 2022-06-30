@@ -11,7 +11,7 @@ body {
 
 .page {
   width: 100%;
-  height: calc(- 8vh);
+  height: calc(100vh - 8vh);
   background-color: white;
 }
 
@@ -29,4 +29,5 @@ footer {
   align-items: center;
   justify-content: center;
   color: black;
+  background-color: white;
 }

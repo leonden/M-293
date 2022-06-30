@@ -9,11 +9,6 @@ html {
   justify-content: space-between;
 }
 
-.connect-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-tile {
   margin: 2em 0;
   display: flex;
@@ -111,11 +106,10 @@ html {
 @media (min-width: 576px) {
   #connect {
     height: calc(100vh - 8vh);
-    justify-content: space-between;
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   .tile-text {
     font-size: 1.5em;
   }
